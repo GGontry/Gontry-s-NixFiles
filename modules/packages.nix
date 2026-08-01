@@ -28,6 +28,7 @@
     xwayland-satellite
     chatterino7
     inputs.zen-browser.packages."${pkgs.system}".default
+    inputs.kronosave.packages.${pkgs.system}.default
     tauon
     kdePackages.kdenlive
     mpv
@@ -45,6 +46,12 @@
     slurp
     satty
     stown
+    blockbench
+    lm_sensors
+    procps
+    coreutils
+    gawk
+    gnugrep
   ];
 
   programs.tmux.enable = true;

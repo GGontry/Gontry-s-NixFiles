@@ -9,6 +9,8 @@
   environment.systemPackages = with pkgs; [
     heroic
     vesktop
+    discord
+    mangohud
 
     (prismlauncher.override {
       jdks = [

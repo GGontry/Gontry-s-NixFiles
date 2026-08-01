@@ -3,6 +3,7 @@
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    kronosave.url = "github:GGontry/Kronosave";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.05";
     zen-browser = {
       url = "github:youwen5/zen-browser-flake";
@@ -10,7 +11,7 @@
     };
   };
 
-  outputs = { self, nixpkgs, nixpkgs-stable, ... }@inputs: 
+  outputs = { self, nixpkgs, nixpkgs-stable, kronosave, ... }@inputs: 
     let
       system = "x86_64-linux";
     in
